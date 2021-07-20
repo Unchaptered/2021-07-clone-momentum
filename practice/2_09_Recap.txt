@@ -1,0 +1,26 @@
+
+Javascript 의 Variable 종류
+        1   const   수정불가    Always const
+        2   let     수정가능    Sometimes let
+        3   var     구시대 유물 Never var
+
+Javascript 의 Data Type 종류
+        1   Number      숫자            console.log(3);
+        2   String      문자            console.log("3");
+        3   Boolean     참,거짓         console.log(true);
+etc
+        4   Undefined   정의되지 않은   console.log(Undefined);
+        5   Null        빈              console.log(Null);
+
+Javascript 의 Error Message 종류
+        1   Undefined   정의되지 않은
+        2   NaN         숫자가 아닌
+
+Javascript 의 Room 종류
+        1   Single Variable Variable    const a=5;
+        2   Array Variable  Arrays      const a=[1,2,3,4,true,Undefined,"text"];
+        3   Member Variable Objects     
+
+P.S. Java의 Array 와 달리 자유롭게 새로운 요소의 추가가 가능하다!!
+
+
