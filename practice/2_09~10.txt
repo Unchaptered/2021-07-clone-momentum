@@ -1,26 +1,71 @@
-
-Javascript 의 Variable 종류
+Javascript 의 Variable 종류 (const, let , var)
         1   const   수정불가    Always const
         2   let     수정가능    Sometimes let
         3   var     구시대 유물 Never var
 
-Javascript 의 Data Type 종류
+Javascript 의 Data Type 종류 (Number, String, Boolean, Undefined, Null)
         1   Number      숫자            console.log(3);
         2   String      문자            console.log("3");
         3   Boolean     참,거짓         console.log(true);
-etc
+        
         4   Undefined   정의되지 않은   console.log(Undefined);
         5   Null        빈              console.log(Null);
 
-Javascript 의 Error Message 종류
-        1   Undefined   정의되지 않은
-        2   NaN         숫자가 아닌
+Javascript 의 Error Message 종류 (NaN)
+        1   NaN         숫자가 아닌
 
-Javascript 의 Room 종류
+Javascript 의 Room 종류 (Single Variable, Arrays, Obejcts)
         1   Single Variable Variable    const a=5;
         2   Array Variable  Arrays      const a=[1,2,3,4,true,Undefined,"text"];
-        3   Member Variable Objects     
+                                        const days=["mon","tue", "wed","thu","fri","sat","sun"];
+        3   Member Variable Objects     const player={
+                                                name: "Nico",
+                                                age: 98,
+                                        };
 
-P.S. Java의 Array 와 달리 자유롭게 새로운 요소의 추가가 가능하다!!
+Javascript 의 Room 종류 별 특징 ((Variable, Arrays, Object) + Characteristic)
+        1   Variable    simple data type
+        2   Arrays      free to add new column
+        3   Objects     free to change member variable, except data type(const, let)
 
+Javascript 의 fucntion 과 argument (similar to method(Java))
+        function 은 java 의 메서드
+        argument 는 해당 메서드의 () 안에 들어가는 숫자
+                                        function minusFive(potato){
+                                                console.log(potato-5);
+                                        }
+                                        minusFive(5,10,12,34,4,5,6,7);
+        >> minusFive function 의 output 은 0이다.
+        >> () 안에 많은 argument가 있지만 최초의 argument만 받아들이기 때문이다.
+
+Javascript 의 function 과 Objects (simlar to class&method(Java))
+                                        const player_2={
+                                                name:"Nico",
+                                                age:98,
+                                                function minusFive_2(potato){
+                                                        console.log(potato-5);
+                                                }
+                                        }
+                                        minusFive_2(5,10,12,34,4,5,6,7);
+        >> minusFive_2 function 의 output 은 0이다.
+        >> 위와 동일하다.
+
+중간 총평
+1.Javascript 는 다음과 같은 요소 들을 이해해야 한다.
+        Variable
+        Data Type
+        Objects
+        fucntion
+2.이러한 부분들은 Java 와 매우 비슷하지만, 훨씬 간단한 부분이 있다.
+        Javascript              Java
+        let     상수            (default) 변수
+        const   변수            final     상수
+        Javascript              Java            Specification(etc)
+        3       Number          3       Number  정수 byte, short, int, long / 실수 float, double
+        '3'     String          '3'     String  문자 char
+        "3"     String          "3"     Stirng  문자형 String
+        true    Boolean         true    Boolean 참거짓 boolean
+        >> Java의 경우 위에 적혀있는 경우 말고도 많은 종류(Integer)가 있다.
+          이렇게 많은 자료형은 Java를 효율적인 데이터 처리화가 가능하게 만들면서도
+          코딩의 난이도를 높이게 만드는 듯한 기분이 든다.
 
