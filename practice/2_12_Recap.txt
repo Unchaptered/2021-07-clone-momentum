@@ -1,0 +1,10 @@
+1. Javascript 의 function 안에서의 interaction
+        1   console.log();
+        2   alert();
+        3   return;
+
+2. Javascript 의 function 안에서의 interaction 과 Java 와의 비교
+            Javascript          Java
+        1   console.log();      system.out.print();
+        2   alert();            idk
+        3   return;             return;

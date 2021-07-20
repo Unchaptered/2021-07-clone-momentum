@@ -47,7 +47,7 @@ const type 의 variable 인 age 에 96 할당
 const type 의 variable 인 krAge 에 calculateKrAge(age) 할당
 콘솔에 krAge 출력
 */
-/* return */
+// 2_11_01_return
 const age=96; 
 function calculateKrAge(age_of_foreigner){
     return age_of_foreigner+2;
@@ -55,6 +55,24 @@ function calculateKrAge(age_of_foreigner){
 const krAge=calculateKrAge(age); 
 console.log(krAge); 
 
+// 2_11_02_return_calculator
+const cal={
+    plus:function(a,b){
+        return a+b;
+    },
+    abstract:function(a,b){
+        return a-b;
+    },
+    multiply:function(a,b){
+        return a*b;
+    },
+    devide:function(a,b){
+        return a/b;
+    },
+    square:function(a,b){
+        return a**b;
+    },
+}
 
-
-음
+const plusResult=cal.plus(3,4);
+console.log(plusResult);
