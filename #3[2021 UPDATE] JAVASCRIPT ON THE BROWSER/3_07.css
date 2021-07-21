@@ -1,0 +1,17 @@
+body {
+  background-color: papayawhip;
+}
+h1 {
+  color: cornflowerblue;
+  transition: color 0.7 ease-in-out;
+}
+.active {
+  color: salmon;
+}
+.hello1,
+.hello2,
+.hello3,
+.hello4,
+.hello5 {
+  text-decoration: underline;
+}

@@ -33,7 +33,7 @@ Most massy object is style: CSSStyleDeclaration ~~
 */
 /* console.dir : element의 세부 항목들 노출
     on~~~으로 시작하는 것들이 존나 많은데...
-    그게 다 event이다.
+    그게 다 event listener이다.
 */
 
 /*
