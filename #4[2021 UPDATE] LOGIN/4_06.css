@@ -1,0 +1,7 @@
+/* reset */
+@import "css/reset/reset.css";
+
+/* If you give elements this class, it is hidden */
+.hidden {
+  display: none;
+}
