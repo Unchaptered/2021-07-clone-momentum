@@ -42,7 +42,6 @@ function on_submit_button_click(prevent){
     prevent.preventDefault();
     
     const user_name=login_input.value;
-    console.log(user_name);
     
     login_form.classList.add(HIDDEN_CLASSNAME);
     localStorage.setItem(USERNAME_KEY,user_name);
