@@ -180,3 +180,28 @@
 .button > button:hover {
   background-color: red;
 }
+
+#input_todo_ui > div {
+  /* margin */
+  margin-bottom: 10px;
+  /* display */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+#input_todo_ui > div:nth-child(1) {
+  margin-top: 10px;
+}
+#input_todo_ui > div > button {
+  /* size */
+  width: 30px;
+  /* border */
+  border: inherit;
+  /* design */
+  background-color: inherit;
+}
+.input_todo_complete {
+  text-decoration: 3px line-through red;
+}
