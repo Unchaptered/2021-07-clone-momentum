@@ -45,14 +45,14 @@ function todo_list_synchronize(){
     }
 }
 function todo_list_synchronize_once(){
-    let todo_list_length=todo_list.length;
+    const todo_list_length=todo_list.length;
+    let todo_list_length_let=0;
     console.log(`todo_list length is ${todo_list_length}`);
-    while(todo_list_length !== 0){
-        todo_list_length = todo_list_length-1;
-        todo_list_create(todo_list[todo_list_length]);
+    while(todo_list_length !== todo_list_length_let){
+        todo_list_create(todo_list[todo_list_length_let]);
+        todo_list_length_let=todo_list_length_let+1;
     }
 }
-
 function todo_list_create(todo_input_obj){
     const div=document.createElement("div");
     div.id=todo_input_obj.id;
@@ -61,15 +61,24 @@ function todo_list_create(todo_input_obj){
     span.innerHTML=todo_input_obj.text;
     const button=document.createElement("button");
     button.innerHTML="❌";
+    button.addEventListener("click",todo_list_delete);
 
     div.appendChild(span);
     div.appendChild(button);
     input_todo_ui.appendChild(div);
 }
 
-function todo_list_delete(pevent){
+function todo_list_delete(prevent){
     prevent.preventDefault();
-    const li=event.target.parentElement;
+    const li=prevent.target.parentElement;
+    li.remove();
 
+    todo_list=todo_list.filter(a => a.id !== parseInt(li.id));
+    todo_list_synchronize_to_local();
+}
 
+function todo_list_complelete(){
+}
+function todo_list_synchronize_to_local(){
+    localStorage.setItem(todo_list_key,JSON.stringify(todo_list));
 }
