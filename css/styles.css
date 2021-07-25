@@ -1,3 +1,20 @@
+/* reset */
+@import "reset/reset.css";
+/* components */
+@import "components/all_back.css";
+@import "components/all_font.css";
+@import "components/all_porfile.css";
+@import "components/all_position.css";
+@import "components/all_topbar.css";
+@import "components/background.css";
+/* root */
+@import "root.css";
+/* page */
+@import "index.css";
+
 body {
   background-color: papayawhip;
+}
+.display-none {
+  display: none;
 }

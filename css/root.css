@@ -1,0 +1,17 @@
+:root {
+  /* font */
+  --color--: rgba(230, 230, 230, 1);
+  /* background */
+  --back--: rgba(233, 233, 233, 0.7);
+  --back-strong--: rgba(146, 146, 146, 1);
+  /* navigation bar */
+  --nav_topbar_color--: rgba(70, 54, 0, 1);
+  --nav_topbar_color-hover--: rgb(107, 98, 67);
+  --nav_topbar_background--: rgb(255, 198, 0, 1);
+  --nav_topbar_background-hover--: rgb(255, 216, 42);
+  /* animation */
+  --animation-linear-07--: color 0.5s linear, background-color 0.5s linear;
+
+  --border--: 2px solid rgba(144, 144, 144, 0.7);
+  --border-radius--: 5px;
+}

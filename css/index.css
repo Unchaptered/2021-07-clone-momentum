@@ -1,0 +1,162 @@
+.main {
+  /* size */
+  width: 100%;
+  height: 100vh;
+  /* design */
+  background-color: none;
+  /* display */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.box_clmn {
+  /* design */
+
+  /* font */
+}
+#title_main {
+  /* margin */
+  margin: 0 0 30px 0;
+  /* font */
+  font-size: 30px;
+  font-weight: 600;
+  text-shadow: 1px 0 black, -1px 0 black, 0 1px black, 0 -1px black;
+}
+#input_name {
+  /* margin */
+  /* size */
+  width: auto;
+  height: 25px;
+  /* font */
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+
+  outline: none;
+  text-align: center;
+  /* border */
+  border: var(--border--);
+  border-radius: var(--border-radius--);
+  /* design */
+  background-color: rgba(0, 0, 0, 0.7);
+}
+#input_name-replace_in {
+  /* padding */
+  padding: 0 17.5px;
+  /* size */
+  width: auto;
+  height: 25px;
+  /* font */
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  /* border */
+  border: var(--border--);
+  border-radius: var(--border-radius--);
+  /* design */
+  background-color: rgba(0, 0, 0, 0.7);
+  /* display */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#nav_right {
+  margin: none;
+  /* z-index */
+  z-index: 0;
+  /* position */
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  /* size */
+  width: 180px;
+  height: 60%;
+  /* border */
+  border-radius: var(--border-radius--);
+  /* design */
+  /* font */
+  display: flex;
+  flex-direction: column;
+}
+#nav_right > div {
+  /* size */
+  width: 100%;
+  /* border */
+  border-radius: var(--border-radius--);
+  /* design */
+  background-color: teal;
+}
+#nav_right > div:nth-child(1) {
+  /* size */
+  height: 40px;
+  /* font */
+  color: white;
+  /* design */
+  background-color: rgba(0, 0, 0, 0.7);
+  /* display */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#nav_right > div:nth-child(2),
+#input_todo {
+  /* transform */
+  transform: translateY(5px);
+}
+#nav_right > div:nth-child(2) {
+  /* margin */
+  margin-bottom: 5px;
+  /* size */
+  height: 40px;
+  /* font */
+  font-size: 18px;
+  font-weight: 600;
+  /* design */
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* display */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#input_todo {
+  /* margin */
+  margin-bottom: 10px;
+  /* size */
+  width: auto;
+  height: 25px;
+  /* border */
+  border: var(--border--);
+  border-radius: var(--border-radius--);
+  outline: none;
+  /* font */
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  /* design */
+  background-color: rgba(0, 0, 0, 0.7);
+  /* display */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#nav_right > div:nth-child(4) {
+  /* size */
+  height: 100%;
+  /* border */
+  border-radius: var(--border-radius--);
+  /* color */
+  color: white;
+  /* design */
+  background-color: rgba(0, 0, 0, 0.7);
+  /* display */
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
+}
+.button {
+  margin-top: 5px;
+  margin-left: 10px;
+}
