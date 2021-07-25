@@ -160,3 +160,18 @@
   margin-top: 5px;
   margin-left: 10px;
 }
+.button > button {
+  /* size */
+  width: 20px;
+  height: 20px;
+  /* border */
+  border: none;
+  /* design */
+  background-color: inherit;
+  /* display */
+  text-align: center;
+  align-items: center;
+}
+.button > button:hover {
+  background-color: red;
+}
