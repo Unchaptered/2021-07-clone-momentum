@@ -100,7 +100,7 @@
   justify-content: center;
 }
 #nav_right > div:nth-child(2),
-#input_todo {
+#input_todo-form {
   /* transform */
   transform: translateY(5px);
 }
@@ -120,7 +120,7 @@
   align-items: center;
   justify-content: center;
 }
-#input_todo {
+#input_todo-form {
   /* margin */
   margin-bottom: 10px;
   /* size */
@@ -130,16 +130,21 @@
   border: var(--border--);
   border-radius: var(--border-radius--);
   outline: none;
-  /* font */
-  color: white;
-  text-align: center;
-  font-size: 15px;
   /* design */
   background-color: rgba(0, 0, 0, 0.7);
   /* display */
   display: flex;
   align-items: center;
   justify-content: center;
+}
+#input_todo {
+  /* height */
+  outline: none;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  /* font */
+  color: white;
+  text-align: center;
 }
 #nav_right > div:nth-child(4) {
   /* size */
