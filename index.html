@@ -12,29 +12,33 @@
   <body class="position-relative">
     <main class="main">
       <div id="title_main" class="box_clmn"> Momentum</div>
-      <form id="input_form">
-        <input id="input_name" placeholder="Write Your Name" type="text"/>
+      <form id="input_form" >
+        <input id="input_name"  placeholder="Write Your Name" type="text"/>
       </form>
-      <div id="input_name-replace" class="display-none">
-        <p id="input_name-replace_in" class="display-none">Welcome, Unhaptered</p>
+      
+      <div id="input_name-replace" >
+        <p id="input_name-replace_in">Welcome, Unhaptered</p>
       </div>
+      <button id="input_name-reset" >Reset Name</button>
       <div id="nav_right">
-        <div id="time">18:18:19</div>
+        <div id="time">disconnected</div>
         <div>To Do List</div>
         <form id="input_todo-form">
           <input id="input_todo" placeholder="Write To Do List" type="text">
         </form>
-        <div > <!-- To Do List -->
-          <div id="input_todo_ui">
-          </div>
+        <!-- To Do List -->
+        <div id="input_todo_ui">
         </div>
       </div>
     </main>
+    <div id="nav_top_right"class="position-absolute">
+      
+    </div>
 
-    <img class="background-size"src="img/background_01.jpg"/>
     <script src="js/input_time.js"></script>
     <script src="js/input_name.js"></script>
     <script src="js/input_todo.js"></script>
     <script src="js/background.js"></script>
+    <script src="js/weather.js"></script>
   </body>
 </html>

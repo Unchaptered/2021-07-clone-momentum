@@ -14,4 +14,11 @@
 
   --border--: 2px solid rgba(144, 144, 144, 0.7);
   --border-radius--: 5px;
+
+  /* this */
+  --box-background--: rgb(0, 0, 0, 0.7);
+  --box-background-hover: rgba(0, 0, 0, 0.8);
+
+  --text-color--: rgba(0, 0, 0, 1);
+  --text-color-hover--: rgba(0, 0, 0, 0.3);
 }

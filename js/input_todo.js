@@ -19,7 +19,13 @@ function todo_list_submit(prevent){
         id:Date.now(),
         complete:false,
     }
-    todo_list_push(todo_input_obj);
+    if(todo_input_tmp.length>16) {
+        alert("17 자리 이상은 입력할 수 없습니다.");
+    } else if(todo_input_tmp!==""){
+        todo_list_push(todo_input_obj);
+    } else {
+        alert("공백은 입력할 수 없습니다.");
+    }
 }
 
 function todo_list_push(todo_input_obj){
@@ -36,13 +42,9 @@ function todo_list_push(todo_input_obj){
 function todo_list_synchronize_to_list(){
     todo_list_load_localStorage=localStorage.getItem(todo_list_key);
     if(todo_list_load_localStorage === null){
-        console.log(`todo_list_load_localStorage is nothing`);
-        console.log(`todo_list is nothing`);
     } else {
         const todo_json=JSON.parse(todo_list_load_localStorage);
         todo_list=todo_json;
-        console.log(`todo_list is ${todo_list}`);
-        console.log(`todo_list_load_localStorage is ${todo_list_load_localStorage}`);
     }
 }
 function todo_list_synchronize_once(){
@@ -50,15 +52,11 @@ function todo_list_synchronize_once(){
     const todo_json=JSON.parse(todo_list_load_localStorage);
 
     const todo_list_length=todo_list.length;
-    let todo_list_length_let=0;
-    console.log(`todo_list length is ${todo_list_length}`);
+    let todo_list_length_let=0; 
     while(todo_list_length !== todo_list_length_let){
         todo_list_create(todo_list[todo_list_length_let]);
         if(todo_json[todo_list_length_let].complete==true){
-            console.log(todo_json[todo_list_length_let]);
-            console.log(todo_json[todo_list_length_let].id);
             const tmp_li_id=todo_json[todo_list_length_let].id;
-            console.log(tmp_li_id);
             const tmp_li=document.getElementById(tmp_li_id);
             tmp_li.classList.add("input_todo_complete");
         } else {}

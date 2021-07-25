@@ -1,0 +1,155 @@
+#nav_right {
+  margin: none;
+  /* z-index */
+  z-index: 0;
+  /* position */
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  /* size */
+  width: 180px;
+  height: 60%;
+  /* border */
+  border-radius: var(--border-radius--);
+  /* design */
+  /* font */
+  display: flex;
+  flex-direction: column;
+}
+#nav_right > div {
+  /* size */
+  width: 100%;
+  /* border */
+  border-radius: var(--border-radius--);
+  /* design */
+}
+#nav_right > div:nth-child(1) {
+  /* size */
+  height: 40px;
+  /* font */
+  color: white;
+  /* design */
+  background-color: var(--box-background--);
+  /* display */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#nav_right > div:nth-child(2),
+#input_todo-form {
+  /* transform */
+  transform: translateY(5px);
+}
+#nav_right > div:nth-child(2) {
+  /* margin */
+  margin-bottom: 5px;
+  /* size */
+  height: 40px;
+  /* font */
+  font-size: 18px;
+  font-weight: 600;
+  /* design */
+  color: white;
+  background-color: var(--box-background--);
+  /* display */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#input_todo-form {
+  /* margin */
+  margin-bottom: 10px;
+  /* size */
+  width: auto;
+  height: 25px;
+  /* border */
+  border: var(--border--);
+  border-radius: var(--border-radius--);
+  outline: none;
+  /* design */
+  background-color: var(--box-background--);
+  /* display */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#input_todo {
+  /* height */
+  outline: none;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  /* font */
+  color: white;
+  text-align: center;
+}
+#nav_right > div:nth-child(4) {
+  /* size */
+  height: 100%;
+  /* border */
+  border-radius: var(--border-radius--);
+  /* color */
+  color: white;
+  /* design */
+  background-color: var(--box-background--);
+  /* display */
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
+}
+.button {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.button > button {
+  /* size */
+  width: 20px;
+  height: 20px;
+  /* border */
+  border: none;
+  /* design */
+  background-color: inherit;
+  /* display */
+  text-align: center;
+  align-items: center;
+}
+.button > button:hover {
+  background-color: red;
+}
+#input_todo_ui > div {
+  /* margin */
+  margin-bottom: 10px;
+  /* display */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+#input_todo_ui > div:nth-child(1) {
+  margin-top: 10px;
+}
+#input_todo_ui > div > button {
+  /* size */
+  width: 30px;
+  /* border */
+  border: inherit;
+  /* design */
+  background-color: inherit;
+}
+.input_todo_complete {
+  text-decoration: 3px line-through red;
+}
+#nav_right > div:nth-child(1),
+#nav_right > div:nth-child(2),
+#input_todo-form,
+#nav_right > div:nth-child(4) {
+  transition: background-color 0.3s linear;
+}
+#nav_right > div:nth-child(1):hover,
+#nav_right > div:nth-child(2):hover,
+#input_todo-form:hover,
+#input_todo-form:focus,
+#nav_right > div:nth-child(4):hover {
+  background-color: var(--box-background-hover);
+}

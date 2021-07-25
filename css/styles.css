@@ -11,6 +11,9 @@
 @import "root.css";
 /* page */
 @import "index.css";
+@import "index_input.css";
+@import "index_nav.css";
+@import "index_nav_weather.css";
 
 body {
   background-color: papayawhip;

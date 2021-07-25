@@ -1,0 +1,12 @@
+#nav_top_right {
+  /* position */
+  top: 15px;
+  right: 20px;
+  /* font */
+  font-size: 20px;
+  font-weight: 600;
+  transition: all 0.3s linear;
+}
+#nav_top_right:hover {
+  transform: scale(1.1) rotate(5deg);
+}
