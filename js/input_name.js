@@ -8,7 +8,6 @@ const name_local=localStorage.getItem(name_KEY);
 if(name_local===null){
     form_input.addEventListener("submit",name_localStorage_save);
 } else {
-    name_replace_text.addEventListener("click", name_localStorage_delete);
     name_localStorage_load(name_local);
 }
 
