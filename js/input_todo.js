@@ -19,7 +19,9 @@ function todo_list_submit(prevent){
         id:Date.now(),
         complete:false,
     }
-    if(todo_input_tmp.length>16) {
+    if(todo_list.length+1>10){
+        alert("10 개 이상의 리스트 생성은 불가합니다.");
+    }else if(todo_input_tmp.length>16) {
         alert("17 자리 이상은 입력할 수 없습니다.");
     } else if(todo_input_tmp!==""){
         todo_list_push(todo_input_obj);

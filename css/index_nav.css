@@ -3,7 +3,7 @@
   /* z-index */
   z-index: 0;
   /* position */
-  position: absolute;
+  position: fixed;
   right: 0;
   bottom: 0;
   /* size */

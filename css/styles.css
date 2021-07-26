@@ -14,6 +14,8 @@
 @import "index_input.css";
 @import "index_nav.css";
 @import "index_nav_weather.css";
+/* animation */
+@import "index_nav_flip.css";
 
 body {
   background-color: papayawhip;
