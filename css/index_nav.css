@@ -150,6 +150,28 @@
 #nav_right > div:nth-child(2):hover,
 #input_todo-form:hover,
 #input_todo-form:focus,
-#nav_right > div:nth-child(4):hover {
+#nav_right > div:nth-child(4):hover,
+#nav_right-trigger:hover {
   background-color: var(--box-background-hover);
+}
+
+#nav_right-trigger {
+  /* position */
+  position: fixed;
+  right: 0;
+  top: 34%;
+  /* size */
+  width: 180px;
+  height: 30px;
+  /* border */
+  border: var(--border--);
+  border-radius: var(--border-radius--);
+  /* font */
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  /* design */
+  background-color: var(--box-background--);
+  /* transition */
+  transition: all;
 }

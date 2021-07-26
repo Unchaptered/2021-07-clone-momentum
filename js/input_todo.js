@@ -1,14 +1,21 @@
 const todo_form=document.querySelector("#input_todo-form");
 const todo_input=document.querySelector("#input_todo");
 const input_todo_ui=document.querySelector("#input_todo_ui");
+const nav_right=document.querySelector("#nav_right");
+const nav_right_trigger=document.querySelector("#nav_right-trigger");
+let nav_right_P=false; //false 는 펼쳐진 상태
 let todo_list=[];
 const todo_list_key="todo_list_key";
+const nav_right_CLASS_1="swing-out-right-bck";
+const nav_right_CLASS_2="swing-out-right-bck-reverse";
 let todo_list_load_localStorage=localStorage.getItem(todo_list_key);
 // todo_list have text and id.
 todo_form.addEventListener("submit",todo_list_submit);
+nav_right_trigger.addEventListener("click",nav_right_flip);
 // 시작하자마자 아래 function 실행
 todo_list_synchronize_to_list();
 todo_list_synchronize_once();
+
 
 function todo_list_submit(prevent){
     prevent.preventDefault();
@@ -118,4 +125,17 @@ function todo_list_complete(prevent){
         li.classList.add("input_todo_complete");
     }
     localStorage.setItem(todo_list_key,JSON.stringify(todo_json));
+}
+
+// 접기 펼치기
+function nav_right_flip(){
+    if(nav_right_P===false){
+        nav_right.classList.remove(nav_right_CLASS_2);
+        nav_right.classList.add(nav_right_CLASS_1);
+        nav_right_p=true;
+    } else {
+        nav_right.classList.remove(nav_right_CLASS_1);
+        nav_right.classList.add(nav_right_CLASS_2);
+        nav_right_p=false;
+    }
 }
